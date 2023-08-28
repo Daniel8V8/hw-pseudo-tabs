@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>APP TAB exemple | Pseudo</title>
+    <style>
+      .tabs {
+        /*border: 1px dotted black;*/
+        list-style: none;
+        padding: 10px;
+        margin: 20px;
+      }
+      .tabs-item {
+        border-radius: 5px;
+        border: 1px solid #e6e6e6;
+        display: inline-block;
+        padding: 20px 10px;
+        margin: 5px;
+        text-align: center;
+        transition: 0.35s;
+        height: 100px;
+      }
+      .tabs-item:hover {
+        background-color: #e7e7e7;
+      }
+      .tabs-img {
+        margin-bottom: 20px;
+      }
+      .tabs-link {
+        text-decoration: none;
+        color: #333;
+        font-family: Arial;
+      }
+
+      .tabs-options {
+        font-size: 22px;
+        font-weight: 900;
+        text-align: center;
+        line-height: 10px;
+        background-color: #c6c6c6;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        opacity: 0;
+        transition: 0.7s;
+        transform: translateX(80px) translateY(-125px);
+      }
+      .tabs-options:hover {
+        opacity: 1;
+      }
+
+      .tabs-itemY {
+        border-radius: 5px;
+        border: 1px solid #e6e6e6;
+        display: inline-block;
+        padding: 20px 33px;
+        margin: 5px;
+        text-align: center;
+        transition: 0.35s;
+        height: 100px;
+      }
+      .tabs-itemY:hover {
+        background-color: #e7e7e7;
+      }
+      .tabs-imgY {
+        margin-bottom: 20px;
+        height: 64px;
+        width: 64px;
+      }
+      .tabs-linkY {
+        text-decoration: none;
+        color: #333;
+        font-family: Arial;
+      }
+
+      .tabs-optionsY {
+        font-size: 22px;
+        font-weight: 900;
+        text-align: center;
+        line-height: 10px;
+        background-color: #c6c6c6;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        opacity: 0;
+        transition: 0.7s;
+        transform: translateX(55px) translateY(-125px);
+      }
+      .tabs-optionsY:hover {
+        opacity: 1;
+      }
+
+      .tabs-itemG {
+        border-radius: 5px;
+        border: 1px solid #e6e6e6;
+        display: inline-block;
+        padding: 20px 33px;
+        margin: 5px;
+        text-align: center;
+        transition: 0.35s;
+        height: 100px;
+      }
+      .tabs-itemG:hover {
+        background-color: #e7e7e7;
+      }
+      .tabs-imgG {
+        margin-bottom: 20px;
+        height: 64px;
+        width: 64px;
+      }
+      .tabs-linkG {
+        text-decoration: none;
+        color: #333;
+        font-family: Arial;
+      }
+
+      .tabs-optionsG {
+        font-size: 22px;
+        font-weight: 900;
+        text-align: center;
+        line-height: 10px;
+        background-color: #c6c6c6;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        opacity: 0;
+        transition: 0.7s;
+        transform: translateX(55px) translateY(-125px);
+      }
+      .tabs-optionsG:hover {
+        opacity: 1;
+      }
+
+      .tabs-itemF {
+        border-radius: 5px;
+        border: 1px solid #e6e6e6;
+        display: inline-block;
+        padding: 20px 33px;
+        margin: 5px;
+        text-align: center;
+        transition: 0.35s;
+        height: 100px;
+      }
+      .tabs-itemF:hover {
+        background-color: #e7e7e7;
+      }
+      .tabs-imgF {
+        margin-bottom: 20px;
+        height: 64px;
+        width: 64px;
+      }
+      .tabs-linkF {
+        text-decoration: none;
+        color: #333;
+        font-family: Arial;
+      }
+
+      .tabs-optionsF {
+        font-size: 22px;
+        font-weight: 900;
+        text-align: center;
+        line-height: 10px;
+        background-color: #c6c6c6;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        opacity: 0;
+        transition: 0.7s;
+        transform: translateX(62px) translateY(-125px);
+      }
+      .tabs-optionsF:hover {
+        opacity: 1;
+      }
+
+      .tabs-itemT {
+        border-radius: 5px;
+        border: 1px solid #e6e6e6;
+        display: inline-block;
+        padding: 20px 33px;
+        margin: 5px;
+        text-align: center;
+        transition: 0.35s;
+        height: 100px;
+      }
+      .tabs-itemT:hover {
+        background-color: #e7e7e7;
+      }
+      .tabs-imgT {
+        margin-bottom: 20px;
+        height: 64px;
+        width: 64px;
+      }
+      .tabs-linkT {
+        text-decoration: none;
+        color: #333;
+        font-family: Arial;
+      }
+
+      .tabs-optionsT {
+        font-size: 22px;
+        font-weight: 900;
+        text-align: center;
+        line-height: 10px;
+        background-color: #c6c6c6;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        opacity: 0;
+        transition: 0.7s;
+        transform: translateX(57px) translateY(-125px);
+      }
+      .tabs-optionsT:hover {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="tabs">
+      <li class="tabs-item" title="acces this account">
+        <a class="tabs-link" href="#">
+          <img class="tabs-img" src="img/ghithub.png" alt="#" />
+          <br />
+          username_here
+        </a>
+        <div class="tabs-options" title="options">. <br />. <br />. <br /></div>
+      </li>
+
+      <li class="tabs-itemY" title="acces this account">
+        <a class="tabs-linkY" href="#">
+          <img class="tabs-imgY" src="img/icons8-youtube-94.png" alt="#" />
+          <br />
+          YouTube
+        </a>
+        <div class="tabs-optionsY" title="options">
+          . <br />. <br />. <br />
+        </div>
+      </li>
+
+      <li class="tabs-itemG" title="acces this account">
+        <a class="tabs-linkG" href="#">
+          <img class="tabs-imgG" src="img/icons8-chrome-96.png" alt="#" />
+          <br />
+          Chrome
+        </a>
+        <div class="tabs-optionsG" title="options">
+          . <br />. <br />. <br />
+        </div>
+      </li>
+
+      <li class="tabs-itemF" title="acces this account">
+        <a class="tabs-linkF" href="#">
+          <img class="tabs-imgF" src="img/icons8-facebook-96.png" alt="#" />
+          <br />
+          Facebook
+        </a>
+        <div class="tabs-optionsF" title="options">
+          . <br />. <br />. <br />
+        </div>
+      </li>
+
+      <li class="tabs-itemF" title="acces this account">
+        <a class="tabs-linkF" href="#">
+          <img class="tabs-imgF" src="img/icons8-instagram-64.png" alt="#" />
+          <br />
+          Instagram
+        </a>
+        <div class="tabs-optionsF" title="options">
+          . <br />. <br />. <br />
+        </div>
+      </li>
+
+      <li class="tabs-itemT" title="acces this account">
+        <a class="tabs-linkT" href="#">
+          <img class="tabs-imgT" src="img/icons8-tiktok-50.png" alt="#" />
+          <br />
+          TikTok
+        </a>
+        <div class="tabs-optionsT" title="options">
+          . <br />. <br />. <br />
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>
